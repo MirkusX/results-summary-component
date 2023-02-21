@@ -22,4 +22,25 @@ export const AyeIcon = styled(AiOutlineEye)`
 export const StyledSection = styled.section`
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const StyledDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  padding: 1em;
+  ${(props) => {
+    if (props.column)
+      return `
+    flex-direction: column;
+    width: 25%;  
+    `;
+  }}
+`;
+
+export const StyledH1 = styled.h1`
+  text-align: left;
 `;
