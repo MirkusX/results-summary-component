@@ -1,10 +1,11 @@
 import "./App.css";
 import { array } from "./components/array";
+import { StyledSection } from "./components/StyledComponents";
 
 function App() {
   return (
     <div className="App">
-      <section>
+      <StyledSection>
         <div>
           <h1>Your Result</h1>
           <div>
@@ -21,10 +22,9 @@ function App() {
           <div>
             {array.map((item, index) => {
               return (
-                <div>
+                <div key={index}>
                   <p>
-                    {item.icon}
-                    {item.category}
+                    {item.icon} {item.category}
                   </p>
                   <p>{item.score}/100</p>
                 </div>
@@ -32,7 +32,7 @@ function App() {
             })}
           </div>
         </div>
-      </section>
+      </StyledSection>
     </div>
   );
 }
