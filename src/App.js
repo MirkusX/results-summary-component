@@ -3,6 +3,7 @@ import { array } from "./components/array";
 import {
   StyledDiv,
   StyledH1,
+  StyledP,
   StyledSection,
 } from "./components/StyledComponents";
 
@@ -10,12 +11,12 @@ function App() {
   return (
     <div className="App">
       <StyledSection>
-        <StyledDiv column>
+        <StyledDiv columnBlue>
           <h1>Your Result</h1>
-          <div>
-            <h1>76</h1>
-            <p>of 100</p>
-          </div>
+          <StyledDiv circle>
+            <StyledH1 circleH1>76</StyledH1>
+            <StyledP>of 100</StyledP>
+          </StyledDiv>
           <h1>Great</h1>
           <p>
             You scored higher than 65% of the people who have taken this test
