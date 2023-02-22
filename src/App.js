@@ -1,6 +1,7 @@
 import "./App.css";
 import { array } from "./components/array";
 import {
+  StyledButton,
   StyledDiv,
   StyledH1,
   StyledP,
@@ -12,7 +13,7 @@ function App() {
     <div className="App">
       <StyledSection>
         <StyledDiv columnBlue>
-          <h1>Your Result</h1>
+          <StyledH1 gray>Your Result</StyledH1>
           <StyledDiv circle>
             <StyledH1 circleH1>76</StyledH1>
             <StyledP>of 100</StyledP>
@@ -39,6 +40,7 @@ function App() {
               );
             })}
           </div>
+          <StyledButton>Continue</StyledButton>
         </StyledDiv>
       </StyledSection>
     </div>

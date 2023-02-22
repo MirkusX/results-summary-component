@@ -30,22 +30,23 @@ export const StyledDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 70%;
   padding: 1em;
+  border-radius: 30px;
   ${(props) => {
     if (props.column)
       return `
     flex-direction: column;
-    width: 25%;  
+    width: 20%;  
     `;
   }}
   ${(props) => {
     if (props.columnBlue)
       return `
     flex-direction: column;
-    width: 25%;  
+    width: 20%;  
    background: rgb(52,45,203);
   background: linear-gradient(0deg, rgba(52,45,203,1) 0%, rgba(103,67,254,1) 100%);
+  color: white;
     `;
   }}
   ${(props) => {
@@ -53,7 +54,7 @@ export const StyledDiv = styled.div`
       return `
     flex-direction: column;
     border-radius: 50%;
-    width: 35%;
+    width: 40%;
     height: auto;
     background: rgb(72,53,241);
 background: linear-gradient(0deg, rgba(72,53,241,1) 0%, rgba(76,34,201,1) 100%);
@@ -71,8 +72,21 @@ export const StyledH1 = styled.h1`
     margin: 0;
     text-align: center;`;
   }}
+  ${(props) => {
+    if (props.gray)
+      return `
+    color: #B8A8F7;
+    text-align: center;`;
+  }}
 `;
 
 export const StyledP = styled.p`
   margin: 0;
+`;
+
+export const StyledButton = styled.button`
+  background-color: #553af7;
+  border: none;
+  border-radius: 30px;
+  padding: 1em;
 `;
