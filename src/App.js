@@ -19,13 +19,13 @@ function App() {
             <StyledP>of 100</StyledP>
           </StyledDiv>
           <h1>Great</h1>
-          <p>
+          <StyledP smallWidth>
             You scored higher than 65% of the people who have taken this test
-          </p>
+          </StyledP>
         </StyledDiv>
         <StyledDiv column>
           <StyledH1>Summary</StyledH1>
-          <div>
+          <StyledDiv listContainer>
             {array.map((item, index) => {
               return (
                 <StyledDiv
@@ -39,7 +39,7 @@ function App() {
                 </StyledDiv>
               );
             })}
-          </div>
+          </StyledDiv>
           <StyledButton>Continue</StyledButton>
         </StyledDiv>
       </StyledSection>
