@@ -105,7 +105,7 @@ export const StyledP = styled.p`
 `;
 
 export const StyledButton = styled.button`
-  background-color: #553af7;
+  background-color: #303a57;
   border: none;
   border-radius: 30px;
   padding: 1em;
@@ -113,4 +113,7 @@ export const StyledButton = styled.button`
   font-size: 1rem;
   color: white;
   cursor: pointer;
+  &:hover {
+    background-color: #553af7;
+  }
 `;
