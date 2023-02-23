@@ -21,7 +21,6 @@ export const AyeIcon = styled(AiOutlineEye)`
 
 export const StyledSection = styled.section`
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -37,22 +36,21 @@ export const StyledDiv = styled.div`
     if (props.column)
       return `
     flex-direction: column;
-    width: 20%;  
-    padding: 1em;
-    border-radius: 30px;
+    width: 50%;  
+    padding: 0 2em;
     `;
   }}
   ${(props) => {
     if (props.columnBlue)
       return `
     flex-direction: column;
-    width: 20%;  
+    width: 50%;  
     background: rgb(52,45,203);
     background: linear-gradient(0deg, rgba(52,45,203,1) 0%, rgba(103,67,254,1) 100%);
     color: white;
     padding: 1em;
-    border-radius: 30px;
     align-items: center;
+    border-radius: 30px;
     `;
   }}
   ${(props) => {
@@ -73,6 +71,20 @@ export const StyledDiv = styled.div`
     gap: 1em;
     flex-direction: column;
     padding: 0;`;
+  }}
+  ${(props) => {
+    if (props.white)
+      return `
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 2px 7px 15px -7px rgba(0,0,0,0.84);
+    width: 50%;
+    padding: 0;
+    border-radius: 30px;
+    `;
   }}
 `;
 
@@ -114,6 +126,11 @@ export const StyledButton = styled.button`
   color: white;
   cursor: pointer;
   &:hover {
-    background-color: #553af7;
+    background: rgb(54, 45, 226);
+    background: linear-gradient(
+      0deg,
+      rgba(54, 45, 226, 1) 0%,
+      rgba(99, 65, 249, 1) 100%
+    );
   }
 `;
