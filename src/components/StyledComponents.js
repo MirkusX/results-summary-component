@@ -73,7 +73,10 @@ export const StyledDiv = styled.div`
     background: rgb(72,53,241);
     background: linear-gradient(0deg, rgba(72,53,241,1) 0%, rgba(76,34,201,1) 100%);
     margin: 0 auto;
-    padding: 1.5em;`;
+    padding: 1.5em;
+       @media (max-width: 811px) {
+      width: 35%;
+    }`;
   }}
   ${(props) => {
     if (props.listContainer)
@@ -127,6 +130,7 @@ export const StyledP = styled.p`
       return `
     width: 70%;
     margin-bottom: 1.5em;
+    color: #B8A8F7;
     `;
   }}
 `;
