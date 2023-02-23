@@ -26,6 +26,7 @@ export const StyledSection = styled.section`
   min-height: 100vh;
   @media (max-width: 811px) {
     min-height: fit-content;
+    overflow-x: hidden;
   }
 `;
 
@@ -43,6 +44,7 @@ export const StyledDiv = styled.div`
     padding: 0 2em;
     @media (max-width: 811px) {
       width: 90%;
+      padding: 0;
     }
     `;
   }}
@@ -59,7 +61,7 @@ export const StyledDiv = styled.div`
     border-radius: 30px;
     @media (max-width: 811px) {
       width: 95%;
-      border-radius: 0px 0px 30px 30px
+      border-radius: 0px 0px 30px 30px;
     }
     `;
   }}
