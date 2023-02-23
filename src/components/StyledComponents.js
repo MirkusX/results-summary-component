@@ -24,6 +24,9 @@ export const StyledSection = styled.section`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  @media (max-width: 811px) {
+    min-height: fit-content;
+  }
 `;
 
 export const StyledDiv = styled.div`
@@ -38,6 +41,9 @@ export const StyledDiv = styled.div`
     flex-direction: column;
     width: 50%;  
     padding: 0 2em;
+    @media (max-width: 811px) {
+      width: 90%;
+    }
     `;
   }}
   ${(props) => {
@@ -51,6 +57,10 @@ export const StyledDiv = styled.div`
     padding: 1em;
     align-items: center;
     border-radius: 30px;
+    @media (max-width: 811px) {
+      width: 95%;
+      border-radius: 0px 0px 30px 30px
+    }
     `;
   }}
   ${(props) => {
@@ -81,9 +91,14 @@ export const StyledDiv = styled.div`
     align-items: center;
     background: white;
     box-shadow: 2px 7px 15px -7px rgba(0,0,0,0.84);
-    width: 50%;
+    width: 45%;
     padding: 0;
+    margin: 0;
     border-radius: 30px;
+    @media (max-width: 811px) {
+      flex-direction: column;
+      width: 100%;
+    }
     `;
   }}
 `;
