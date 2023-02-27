@@ -3,6 +3,8 @@ import { BiBrain } from "react-icons/bi";
 import { BsLightningCharge, BsChatDots } from "react-icons/bs";
 import { AiOutlineEye } from "react-icons/ai";
 
+//styling
+
 export const BrainIcon = styled(BiBrain)`
   vertical-align: middle;
 `;

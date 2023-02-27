@@ -28,6 +28,7 @@ function App() {
           <StyledDiv column>
             <StyledH1>Summary</StyledH1>
             <StyledDiv listContainer>
+              {/* mapping out result data */}
               {array.map((item, index) => {
                 return (
                   <StyledDiv

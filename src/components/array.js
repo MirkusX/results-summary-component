@@ -1,5 +1,6 @@
 import { AyeIcon, BrainIcon, ChatIcon, LightIcon } from "./StyledComponents";
 
+//array containing result data
 export const array = [
   {
     category: "Reaction",
